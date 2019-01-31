@@ -1,0 +1,17 @@
+//Serveur .proto
+
+syntax = "proto3";
+
+service Repondre {
+
+    rpc Repondre (msgEnvoye) returns (reponse) {}
+
+}
+
+message msgEnvoye {
+    string name = 1;
+}
+
+message reponse {
+    string name = 1;
+}
